@@ -1,0 +1,478 @@
+{
+  "mode": "local",
+  "sample_count": 45,
+  "runs": {
+    "baseline": {
+      "all": {
+        "cases": 45,
+        "classification_micro": {
+          "precision": 0.8666666666666667,
+          "recall": 0.75,
+          "f1": 0.8041237113402062,
+          "tp": 39,
+          "fp": 6,
+          "fn": 13
+        },
+        "classification_macro_f1": 0.8213902572523262,
+        "classification_per_label": {
+          "candidate_specific": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "tp": 4,
+            "fp": 0,
+            "fn": 1
+          },
+          "current_state": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "tp": 3,
+            "fp": 0,
+            "fn": 1
+          },
+          "general_preference": {
+            "precision": 1.0,
+            "recall": 0.7058823529411765,
+            "f1": 0.8275862068965517,
+            "tp": 24,
+            "fp": 0,
+            "fn": 10
+          },
+          "presentation_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0
+          },
+          "unclear": {
+            "precision": 0.4,
+            "recall": 0.8,
+            "f1": 0.5333333333333333,
+            "tp": 4,
+            "fp": 6,
+            "fn": 1
+          }
+        },
+        "proposal_exact_claim": {
+          "precision": 1.0,
+          "recall": 0.6486486486486487,
+          "f1": 0.7868852459016393,
+          "tp": 24,
+          "fp": 0,
+          "fn": 13
+        },
+        "wrong_long_term_write_rate": 0.058823529411764705,
+        "wrong_writes": 1,
+        "total_writes": 17,
+        "arbitration_exact_accuracy": 0.7111111111111111,
+        "conflict_correction_accuracy": 0.8181818181818182,
+        "conflict_correction_cases": 11,
+        "evidence_substring_accuracy": 1.0,
+        "evidence_count": 24,
+        "latency_ms_p50": 0.012665999999994515,
+        "latency_ms_p95": 0.024874999999993652,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "failed_cases": 0,
+        "exact_cases": 29
+      },
+      "dev": {
+        "cases": 24,
+        "classification_micro": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "tp": 24,
+          "fp": 0,
+          "fn": 3
+        },
+        "classification_macro_f1": 0.9818181818181818,
+        "classification_per_label": {
+          "candidate_specific": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "current_state": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "general_preference": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091,
+            "tp": 15,
+            "fp": 0,
+            "fn": 3
+          },
+          "presentation_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "unclear": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 3,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "proposal_exact_claim": {
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "f1": 0.8823529411764706,
+          "tp": 15,
+          "fp": 0,
+          "fn": 4
+        },
+        "wrong_long_term_write_rate": 0.0,
+        "wrong_writes": 0,
+        "total_writes": 11,
+        "arbitration_exact_accuracy": 0.8333333333333334,
+        "conflict_correction_accuracy": 1.0,
+        "conflict_correction_cases": 5,
+        "evidence_substring_accuracy": 1.0,
+        "evidence_count": 15,
+        "latency_ms_p50": 0.011104000000004832,
+        "latency_ms_p95": 0.02066700000000199,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "failed_cases": 0,
+        "exact_cases": 20
+      },
+      "holdout": {
+        "cases": 21,
+        "classification_micro": {
+          "precision": 0.7142857142857143,
+          "recall": 0.6,
+          "f1": 0.6521739130434783,
+          "tp": 15,
+          "fp": 6,
+          "fn": 10
+        },
+        "classification_macro_f1": 0.6817777777777778,
+        "classification_per_label": {
+          "candidate_specific": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "tp": 2,
+            "fp": 0,
+            "fn": 1
+          },
+          "current_state": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1
+          },
+          "general_preference": {
+            "precision": 1.0,
+            "recall": 0.5625,
+            "f1": 0.72,
+            "tp": 9,
+            "fp": 0,
+            "fn": 7
+          },
+          "presentation_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "unclear": {
+            "precision": 0.14285714285714285,
+            "recall": 0.5,
+            "f1": 0.2222222222222222,
+            "tp": 1,
+            "fp": 6,
+            "fn": 1
+          }
+        },
+        "proposal_exact_claim": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "tp": 9,
+          "fp": 0,
+          "fn": 9
+        },
+        "wrong_long_term_write_rate": 0.16666666666666666,
+        "wrong_writes": 1,
+        "total_writes": 6,
+        "arbitration_exact_accuracy": 0.5714285714285714,
+        "conflict_correction_accuracy": 0.6666666666666666,
+        "conflict_correction_cases": 6,
+        "evidence_substring_accuracy": 1.0,
+        "evidence_count": 9,
+        "latency_ms_p50": 0.013499999999999623,
+        "latency_ms_p95": 0.024874999999993652,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "failed_cases": 0,
+        "exact_cases": 9
+      }
+    },
+    "improved": {
+      "all": {
+        "cases": 45,
+        "classification_micro": {
+          "precision": 0.8867924528301887,
+          "recall": 0.9038461538461539,
+          "f1": 0.8952380952380953,
+          "tp": 47,
+          "fp": 6,
+          "fn": 5
+        },
+        "classification_macro_f1": 0.86497557997558,
+        "classification_per_label": {
+          "candidate_specific": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "tp": 4,
+            "fp": 0,
+            "fn": 1
+          },
+          "current_state": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "tp": 3,
+            "fp": 0,
+            "fn": 1
+          },
+          "general_preference": {
+            "precision": 1.0,
+            "recall": 0.9117647058823529,
+            "f1": 0.9538461538461539,
+            "tp": 31,
+            "fp": 0,
+            "fn": 3
+          },
+          "presentation_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0
+          },
+          "unclear": {
+            "precision": 0.45454545454545453,
+            "recall": 1.0,
+            "f1": 0.625,
+            "tp": 5,
+            "fp": 6,
+            "fn": 0
+          }
+        },
+        "proposal_exact_claim": {
+          "precision": 1.0,
+          "recall": 0.918918918918919,
+          "f1": 0.9577464788732394,
+          "tp": 34,
+          "fp": 0,
+          "fn": 3
+        },
+        "wrong_long_term_write_rate": 0.0,
+        "wrong_writes": 0,
+        "total_writes": 24,
+        "arbitration_exact_accuracy": 0.9111111111111111,
+        "conflict_correction_accuracy": 0.9090909090909091,
+        "conflict_correction_cases": 11,
+        "evidence_substring_accuracy": 1.0,
+        "evidence_count": 35,
+        "latency_ms_p50": 0.011499999999997623,
+        "latency_ms_p95": 0.022458000000002976,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "failed_cases": 0,
+        "exact_cases": 39
+      },
+      "dev": {
+        "cases": 24,
+        "classification_micro": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 27,
+          "fp": 0,
+          "fn": 0
+        },
+        "classification_macro_f1": 1.0,
+        "classification_per_label": {
+          "candidate_specific": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "current_state": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "general_preference": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 18,
+            "fp": 0,
+            "fn": 0
+          },
+          "presentation_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "unclear": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 3,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "proposal_exact_claim": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 19,
+          "fp": 0,
+          "fn": 0
+        },
+        "wrong_long_term_write_rate": 0.0,
+        "wrong_writes": 0,
+        "total_writes": 15,
+        "arbitration_exact_accuracy": 1.0,
+        "conflict_correction_accuracy": 1.0,
+        "conflict_correction_cases": 5,
+        "evidence_substring_accuracy": 1.0,
+        "evidence_count": 19,
+        "latency_ms_p50": 0.010791499999988907,
+        "latency_ms_p95": 0.016292000000001083,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "failed_cases": 0,
+        "exact_cases": 24
+      },
+      "holdout": {
+        "cases": 21,
+        "classification_micro": {
+          "precision": 0.7692307692307693,
+          "recall": 0.8,
+          "f1": 0.7843137254901961,
+          "tp": 20,
+          "fp": 6,
+          "fn": 5
+        },
+        "classification_macro_f1": 0.7526436781609196,
+        "classification_per_label": {
+          "candidate_specific": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "tp": 2,
+            "fp": 0,
+            "fn": 1
+          },
+          "current_state": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1
+          },
+          "general_preference": {
+            "precision": 1.0,
+            "recall": 0.8125,
+            "f1": 0.896551724137931,
+            "tp": 13,
+            "fp": 0,
+            "fn": 3
+          },
+          "presentation_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "unclear": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "tp": 2,
+            "fp": 6,
+            "fn": 0
+          }
+        },
+        "proposal_exact_claim": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "tp": 15,
+          "fp": 0,
+          "fn": 3
+        },
+        "wrong_long_term_write_rate": 0.0,
+        "wrong_writes": 0,
+        "total_writes": 9,
+        "arbitration_exact_accuracy": 0.8095238095238095,
+        "conflict_correction_accuracy": 0.8333333333333334,
+        "conflict_correction_cases": 6,
+        "evidence_substring_accuracy": 1.0,
+        "evidence_count": 16,
+        "latency_ms_p50": 0.012458999999992448,
+        "latency_ms_p95": 0.02245900000000245,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "failed_cases": 0,
+        "exact_cases": 15
+      }
+    }
+  }
+}

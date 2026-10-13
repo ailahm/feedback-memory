@@ -1,0 +1,6579 @@
+[
+  {
+    "id": "case-01",
+    "split": "dev",
+    "text": [
+      "我总体希望伴侣安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "6d9dd9a263324b019ee74d79018d27d0",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "6d9dd9a263324b019ee74d79018d27d0",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "c32fb68de6394a2fac7c396e813c0e97",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "proposal_id": "6d9dd9a263324b019ee74d79018d27d0",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.013749999999992935,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我总体希望伴侣安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-02",
+    "split": "dev",
+    "text": [
+      "我希望伴侣喜欢聚会"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "social",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "social",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "3dbf45c9af0245ff95dacde6a587a7c5",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "3dbf45c9af0245ff95dacde6a587a7c5",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "3997e3d2816a4243822009d42d8953f1",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ],
+          "proposal_id": "3dbf45c9af0245ff95dacde6a587a7c5",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011499999999997623,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣喜欢聚会"
+      }
+    ]
+  },
+  {
+    "id": "case-03",
+    "split": "dev",
+    "text": [
+      "只是他每次都迟到"
+    ],
+    "expected_labels": [
+      "candidate_specific"
+    ],
+    "actual_labels": [
+      "candidate_specific"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "candidate_specific"
+      ],
+      "reason_scope": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是他每次都迟到"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.009124999999998717,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是他每次都迟到"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "只是他每次都迟到"
+      }
+    ]
+  },
+  {
+    "id": "case-04",
+    "split": "dev",
+    "text": [
+      "今天太累了不想看"
+    ],
+    "expected_labels": [
+      "current_state"
+    ],
+    "actual_labels": [
+      "current_state"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "current_state"
+      ],
+      "reason_scope": [
+        {
+          "classification": "current_state",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "今天太累了不想看"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.0054589999999993255,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "current_state",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "今天太累了不想看"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "今天太累了不想看"
+      }
+    ]
+  },
+  {
+    "id": "case-05",
+    "split": "dev",
+    "text": [
+      "推荐理由写错了"
+    ],
+    "expected_labels": [
+      "presentation_issue"
+    ],
+    "actual_labels": [
+      "presentation_issue"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "presentation_issue"
+      ],
+      "reason_scope": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "推荐理由写错了"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.004416000000007081,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "推荐理由写错了"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "推荐理由写错了"
+      }
+    ]
+  },
+  {
+    "id": "case-06",
+    "split": "dev",
+    "text": [
+      "他太爱聚会了"
+    ],
+    "expected_labels": [
+      "unclear"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "他太爱聚会了"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011707999999999164,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "他太爱聚会了"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "他太爱聚会了"
+      }
+    ]
+  },
+  {
+    "id": "case-07",
+    "split": "dev",
+    "text": [
+      "我希望伴侣不抽烟"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "smoking",
+        "non_smoker",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "smoking",
+        "non_smoker",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "ebccc3e828094a62a1934f30886b7b34",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "ebccc3e828094a62a1934f30886b7b34",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "ffe0b88da06b4f4084ed70cdc6e65b5f",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "proposal_id": "ebccc3e828094a62a1934f30886b7b34",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.009834000000000231,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣不抽烟"
+      }
+    ]
+  },
+  {
+    "id": "case-08",
+    "split": "dev",
+    "text": [
+      "我希望伴侣喜欢宠物"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "pets",
+        "likes_pets",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "pets",
+        "likes_pets",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "likes_pets",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "ec24cd7e6e694c5dac45daa723758149",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "ec24cd7e6e694c5dac45daa723758149",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "31ae90098dea4e3185e2bd750652d5aa",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "likes_pets",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ],
+          "proposal_id": "ec24cd7e6e694c5dac45daa723758149",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.009707999999997163,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "likes_pets",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣喜欢宠物"
+      }
+    ]
+  },
+  {
+    "id": "case-09",
+    "split": "dev",
+    "text": [
+      "我希望伴侣直接沟通"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "301c628b68bc43569414456aa9c54eb5",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "301c628b68bc43569414456aa9c54eb5",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "0abb555e70df47b3a3783f9b09b084f9",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ],
+          "proposal_id": "301c628b68bc43569414456aa9c54eb5",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.009375000000005906,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣直接沟通"
+      }
+    ]
+  },
+  {
+    "id": "case-10",
+    "split": "dev",
+    "text": [
+      "我能提供耐心的倾听"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "supply",
+        "communication",
+        "patient",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "supply",
+        "communication",
+        "patient",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我能提供耐心的倾听"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "supply",
+          "attribute_key": "communication",
+          "value": "patient",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我能提供耐心的倾听"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "9a6f4d28df744369bf45fc866340eefd",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "9a6f4d28df744369bf45fc866340eefd",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "c84e72e4cf494b16920b67038d79c54e",
+          "revision": 1,
+          "status": "active",
+          "direction": "supply",
+          "attribute_key": "communication",
+          "value": "patient",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我能提供耐心的倾听"
+            }
+          ],
+          "proposal_id": "9a6f4d28df744369bf45fc866340eefd",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.008791000000007987,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我能提供耐心的倾听"
+            }
+          ],
+          "direction": "supply",
+          "attribute_key": "communication",
+          "value": "patient",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我能提供耐心的倾听"
+      }
+    ]
+  },
+  {
+    "id": "case-11",
+    "split": "dev",
+    "text": [
+      "我本人喜欢和朋友聚会"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "self",
+        "social_activity",
+        "social",
+        "with_friends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "self",
+        "social_activity",
+        "social",
+        "with_friends",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "0c85c7d6a06d4b7bbc47ce30544e2218",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "0c85c7d6a06d4b7bbc47ce30544e2218",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "fc46c2a94e3447b2abf3a637a6e1e6a3",
+          "revision": 1,
+          "status": "active",
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ],
+          "proposal_id": "0c85c7d6a06d4b7bbc47ce30544e2218",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.010374999999993029,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ],
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我本人喜欢和朋友聚会"
+      }
+    ]
+  },
+  {
+    "id": "case-12",
+    "split": "dev",
+    "text": [
+      "我总体希望伴侣安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "no_change"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "no_change"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "d18fef207adf45148ec54a9e2ddee083",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "no_change",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "d18fef207adf45148ec54a9e2ddee083",
+          "action": "no_change",
+          "reason": "duplicate",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "quiet"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.010749999999989934,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我总体希望伴侣安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-13",
+    "split": "dev",
+    "text": [
+      "我改变想法现在更希望伴侣安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "update"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "update"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "184adc07556a4ad68aaf93fce1519d8f",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "update",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "184adc07556a4ad68aaf93fce1519d8f",
+          "action": "update",
+          "reason": "explicit_correction",
+          "replaces": "old-1"
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "superseded",
+          "value": "social",
+          "superseded_by": "b26ea340ed2a41ca88257ff8ea7eb0da"
+        },
+        {
+          "memory_id": "b26ea340ed2a41ca88257ff8ea7eb0da",
+          "revision": 2,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣安静一点"
+            }
+          ],
+          "proposal_id": "184adc07556a4ad68aaf93fce1519d8f",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011749999999990934,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": true
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我改变想法现在更希望伴侣安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-14",
+    "split": "dev",
+    "text": [
+      "我希望伴侣安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "clarify"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "clarify"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "843c844e1b0641f28d90f55ce5d88c72",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "clarify",
+          "status": "pending"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "843c844e1b0641f28d90f55ce5d88c72",
+          "action": "clarify",
+          "reason": "unresolved_conflict",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "social"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011416999999999677,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-15",
+    "split": "dev",
+    "text": [
+      "我希望伴侣周末安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "weekends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "weekends",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "weekends",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "cfaccf5c697d43bab9c80a6389b9c905",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "cfaccf5c697d43bab9c80a6389b9c905",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "workdays",
+          "status": "active",
+          "value": "social"
+        },
+        {
+          "memory_id": "164754d1c227478292be3f4330429338",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "weekends",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ],
+          "proposal_id": "cfaccf5c697d43bab9c80a6389b9c905",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.010833000000001758,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "weekends",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣周末安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-16",
+    "split": "dev",
+    "text": [
+      "我不能接受伴侣抽烟"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "boundary",
+        "smoking",
+        "smoker",
+        "general",
+        "clarify"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "boundary",
+        "smoking",
+        "smoker",
+        "general",
+        "clarify"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我不能接受伴侣抽烟"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "boundary",
+          "attribute_key": "smoking",
+          "value": "smoker",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我不能接受伴侣抽烟"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "5a18efbd769a4213b9ef85e9b28b2737",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "clarify",
+          "status": "pending"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "5a18efbd769a4213b9ef85e9b28b2737",
+          "action": "clarify",
+          "reason": "boundary_confirmation_required",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.008833999999999231,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我不能接受伴侣抽烟"
+            }
+          ],
+          "direction": "boundary",
+          "attribute_key": "smoking",
+          "value": "smoker",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我不能接受伴侣抽烟"
+      }
+    ]
+  },
+  {
+    "id": "case-17",
+    "split": "dev",
+    "text": [
+      "我希望伴侣安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "no_change"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "no_change"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "45099e95fc66446d9f45632fd53a7bba",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "no_change",
+          "status": "rejected"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "45099e95fc66446d9f45632fd53a7bba",
+          "action": "no_change",
+          "reason": "use_prohibited",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "forgotten",
+          "use_prohibited": true,
+          "value": "quiet"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.01083299999998788,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-18",
+    "split": "dev",
+    "text": [
+      "只是他太忙了，但我希望伴侣直接沟通"
+    ],
+    "expected_labels": [
+      "candidate_specific",
+      "general_preference"
+    ],
+    "actual_labels": [
+      "candidate_specific",
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "candidate_specific",
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是他太忙了"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "188bcdd5b3e34916b7baabffe5affd4e",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "188bcdd5b3e34916b7baabffe5affd4e",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "5cbf69e1c5ed4ad7a8d5999992ffd9cd",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ],
+          "proposal_id": "188bcdd5b3e34916b7baabffe5affd4e",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.016292000000001083,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是他太忙了"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣直接沟通"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "只是他太忙了，但我希望伴侣直接沟通"
+      }
+    ]
+  },
+  {
+    "id": "case-19",
+    "split": "dev",
+    "text": [
+      "今天不想看，但我希望伴侣不抽烟"
+    ],
+    "expected_labels": [
+      "current_state",
+      "general_preference"
+    ],
+    "actual_labels": [
+      "current_state",
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "smoking",
+        "non_smoker",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "smoking",
+        "non_smoker",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "current_state",
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "current_state",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "今天不想看"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "bba795e179464803984cf73c6e6dd640",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "bba795e179464803984cf73c6e6dd640",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "26b29ea388ba40c7abf31dc2590f6439",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "proposal_id": "bba795e179464803984cf73c6e6dd640",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.012459000000006326,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "current_state",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "今天不想看"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "今天不想看，但我希望伴侣不抽烟"
+      }
+    ]
+  },
+  {
+    "id": "case-20",
+    "split": "dev",
+    "text": [
+      "推荐理由不对，但我希望伴侣喜欢宠物"
+    ],
+    "expected_labels": [
+      "general_preference",
+      "presentation_issue"
+    ],
+    "actual_labels": [
+      "general_preference",
+      "presentation_issue"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "pets",
+        "likes_pets",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "pets",
+        "likes_pets",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference",
+        "presentation_issue"
+      ],
+      "reason_scope": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "推荐理由不对"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "likes_pets",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "f57560465bb04a4286e975b55295d1db",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "f57560465bb04a4286e975b55295d1db",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "155a96ce7e054511b149cf5e3582326f",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "likes_pets",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ],
+          "proposal_id": "f57560465bb04a4286e975b55295d1db",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.015665999999997515,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "推荐理由不对"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢宠物"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "likes_pets",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "推荐理由不对，但我希望伴侣喜欢宠物"
+      }
+    ]
+  },
+  {
+    "id": "case-21",
+    "split": "dev",
+    "text": [
+      "我本人喜欢朋友聚会，但我希望伴侣周末安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "weekends",
+        "add"
+      ],
+      [
+        "self",
+        "social_activity",
+        "social",
+        "with_friends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "weekends",
+        "add"
+      ],
+      [
+        "self",
+        "social_activity",
+        "social",
+        "with_friends",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢朋友聚会"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢朋友聚会"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "2077769df1a9419c94a6a0a6a88d1462",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        },
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "weekends",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "f334d2fc1f2c435399c4253711abf050",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "2077769df1a9419c94a6a0a6a88d1462",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        },
+        {
+          "proposal_id": "f334d2fc1f2c435399c4253711abf050",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "c3e8459ed98046379fe5af90864429ce",
+          "revision": 1,
+          "status": "active",
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢朋友聚会"
+            }
+          ],
+          "proposal_id": "2077769df1a9419c94a6a0a6a88d1462",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        },
+        {
+          "memory_id": "d44907fc75d1422b9a064b2eb557603e",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "weekends",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ],
+          "proposal_id": "f334d2fc1f2c435399c4253711abf050",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.02212499999999784,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢朋友聚会"
+            }
+          ],
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "certainty": "explicit",
+          "correction": false
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "weekends",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我本人喜欢朋友聚会，但我希望伴侣周末安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-22",
+    "split": "dev",
+    "text": [
+      "可能喜欢安静的人吧"
+    ],
+    "expected_labels": [
+      "unclear"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "可能喜欢安静的人吧"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "social"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.007750000000000812,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "可能喜欢安静的人吧"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "可能喜欢安静的人吧"
+      }
+    ]
+  },
+  {
+    "id": "case-23",
+    "split": "dev",
+    "text": [
+      "朋友说他希望找安静的伴侣"
+    ],
+    "expected_labels": [
+      "unclear"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "朋友说他希望找安静的伴侣"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.006541999999998271,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "朋友说他希望找安静的伴侣"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "朋友说他希望找安静的伴侣"
+      }
+    ]
+  },
+  {
+    "id": "case-24",
+    "split": "dev",
+    "text": [
+      "我希望伴侣在杭州"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "location",
+        "杭州",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "location",
+        "杭州",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在杭州"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "杭州",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在杭州"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "2de4f7c52f1e4636b499039de54a0176",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "2de4f7c52f1e4636b499039de54a0176",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "03c42e0eb577489f8e8adb3f41bcbdf4",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "杭州",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在杭州"
+            }
+          ],
+          "proposal_id": "2de4f7c52f1e4636b499039de54a0176",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.015374999999998029,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在杭州"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "杭州",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣在杭州"
+      }
+    ]
+  },
+  {
+    "id": "case-25",
+    "split": "holdout",
+    "text": [
+      "我希望伴侣追求长期关系"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "relationship_goal",
+        "long_term",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "relationship_goal",
+        "long_term",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求长期关系"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "relationship_goal",
+          "value": "long_term",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求长期关系"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "810e2a8f2be7487d99a1695094c5d936",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "810e2a8f2be7487d99a1695094c5d936",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "fb629e11afb94b62aa8ff672a45394a0",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "relationship_goal",
+          "value": "long_term",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求长期关系"
+            }
+          ],
+          "proposal_id": "810e2a8f2be7487d99a1695094c5d936",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.010582999999994569,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求长期关系"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "relationship_goal",
+          "value": "long_term",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣追求长期关系"
+      }
+    ]
+  },
+  {
+    "id": "case-26",
+    "split": "holdout",
+    "text": [
+      "我希望伴侣不养宠物"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "pets",
+        "no_pets",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "pets",
+        "no_pets",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不养宠物"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "no_pets",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不养宠物"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "9105b419f30e48e1b049ec12253005d9",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "9105b419f30e48e1b049ec12253005d9",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "bf1b2d85013f4dceadf846d7fa12ac43",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "no_pets",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不养宠物"
+            }
+          ],
+          "proposal_id": "9105b419f30e48e1b049ec12253005d9",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.010083000000007947,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不养宠物"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "pets",
+          "value": "no_pets",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣不养宠物"
+      }
+    ]
+  },
+  {
+    "id": "case-27",
+    "split": "holdout",
+    "text": [
+      "只针对这个人，不代表我排斥所有爱聚会的人"
+    ],
+    "expected_labels": [
+      "candidate_specific",
+      "unclear"
+    ],
+    "actual_labels": [
+      "candidate_specific",
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "candidate_specific",
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只针对这个人"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "不代表我排斥所有爱聚会的人"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "social"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.017000000000003124,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只针对这个人"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "不代表我排斥所有爱聚会的人"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "只针对这个人，不代表我排斥所有爱聚会的人"
+      }
+    ]
+  },
+  {
+    "id": "case-28",
+    "split": "holdout",
+    "text": [
+      "我不是不喜欢聚会，只是这周太累"
+    ],
+    "expected_labels": [
+      "current_state"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": false,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我不是不喜欢聚会"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是这周太累"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011834000000002232,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我不是不喜欢聚会"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是这周太累"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我不是不喜欢聚会，只是这周太累"
+      }
+    ]
+  },
+  {
+    "id": "case-29",
+    "split": "holdout",
+    "text": [
+      "他喜欢猫这件事不影响我的选择"
+    ],
+    "expected_labels": [
+      "candidate_specific"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": false,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "他喜欢猫这件事不影响我的选择"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.008832999999999758,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "他喜欢猫这件事不影响我的选择"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "他喜欢猫这件事不影响我的选择"
+      }
+    ]
+  },
+  {
+    "id": "case-30",
+    "split": "holdout",
+    "text": [
+      "无论推荐谁，我都想两个人周末安静待着"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "weekends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [],
+    "exact": false,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "无论推荐谁"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我都想两个人周末安静待着"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.014042000000005772,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "无论推荐谁"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我都想两个人周末安静待着"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "无论推荐谁，我都想两个人周末安静待着"
+      }
+    ]
+  },
+  {
+    "id": "case-31",
+    "split": "holdout",
+    "text": [
+      "爱不爱聚会无所谓，有话直说对我才重要"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [],
+    "exact": false,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "爱不爱聚会无所谓"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "有话直说对我才重要"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.014125000000003718,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "爱不爱聚会无所谓"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "有话直说对我才重要"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "爱不爱聚会无所谓，有话直说对我才重要"
+      }
+    ]
+  },
+  {
+    "id": "case-32",
+    "split": "holdout",
+    "text": [
+      "先别根据这次拒绝修改我的偏好"
+    ],
+    "expected_labels": [
+      "unclear"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "先别根据这次拒绝修改我的偏好"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "social"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.008708999999995637,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "先别根据这次拒绝修改我的偏好"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "先别根据这次拒绝修改我的偏好"
+      }
+    ]
+  },
+  {
+    "id": "case-33",
+    "split": "holdout",
+    "text": [
+      "以前说喜欢热闹作废，以后想找安静的伴侣"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference",
+      "unclear"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "update"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "clarify"
+      ]
+    ],
+    "exact": false,
+    "result": {
+      "feedback_classification": [
+        "general_preference",
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "以前说喜欢热闹作废"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "以后想找安静的伴侣"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "以后想找安静的伴侣"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "825bcb537b704cdc9a1a7990ce1de8e9",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "clarify",
+          "status": "pending"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "825bcb537b704cdc9a1a7990ce1de8e9",
+          "action": "clarify",
+          "reason": "unresolved_conflict",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "shared_leisure",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "social"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.02245900000000245,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "以前说喜欢热闹作废"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "以后想找安静的伴侣"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "以前说喜欢热闹作废，以后想找安静的伴侣"
+      }
+    ]
+  },
+  {
+    "id": "case-34",
+    "split": "holdout",
+    "text": [
+      "我希望伴侣工作日安静一点，我希望伴侣周末喜欢聚会"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "workdays",
+        "add"
+      ],
+      [
+        "demand",
+        "shared_leisure",
+        "social",
+        "weekends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "workdays",
+        "add"
+      ],
+      [
+        "demand",
+        "shared_leisure",
+        "social",
+        "weekends",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣工作日安静一点"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末喜欢聚会"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "workdays",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣工作日安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "625a3a0e60a74705b755ab27fe3c38e3",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        },
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "weekends",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末喜欢聚会"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "742b004e3b7440ab9be925c7e89e9543",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "625a3a0e60a74705b755ab27fe3c38e3",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        },
+        {
+          "proposal_id": "742b004e3b7440ab9be925c7e89e9543",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "cad7a8ad5d724e52b52881be07bcd9b2",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "workdays",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣工作日安静一点"
+            }
+          ],
+          "proposal_id": "625a3a0e60a74705b755ab27fe3c38e3",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        },
+        {
+          "memory_id": "600e5eeace764537b7530909028d3db3",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "weekends",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末喜欢聚会"
+            }
+          ],
+          "proposal_id": "742b004e3b7440ab9be925c7e89e9543",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.020333999999996855,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣工作日安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "workdays",
+          "certainty": "explicit",
+          "correction": false
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣周末喜欢聚会"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "weekends",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣工作日安静一点，我希望伴侣周末喜欢聚会"
+      }
+    ]
+  },
+  {
+    "id": "case-35",
+    "split": "holdout",
+    "text": [
+      "我希望伴侣在上海"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "location",
+        "上海",
+        "general",
+        "clarify"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "location",
+        "上海",
+        "general",
+        "clarify"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在上海"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "上海",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在上海"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "cd0cd570ddb24d6f94135eb57608c6cc",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "clarify",
+          "status": "pending"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "cd0cd570ddb24d6f94135eb57608c6cc",
+          "action": "clarify",
+          "reason": "unresolved_conflict",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "location",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "杭州"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011916000000000704,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣在上海"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "上海",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣在上海"
+      }
+    ]
+  },
+  {
+    "id": "case-36",
+    "split": "holdout",
+    "text": [
+      "我改变想法现在更希望伴侣在上海"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "location",
+        "上海",
+        "general",
+        "update"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "location",
+        "上海",
+        "general",
+        "update"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣在上海"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "上海",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣在上海"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "33f8e81c80104ef89042446cca2008e6",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "update",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "33f8e81c80104ef89042446cca2008e6",
+          "action": "update",
+          "reason": "explicit_correction",
+          "replaces": "old-1"
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "location",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "superseded",
+          "value": "杭州",
+          "superseded_by": "4f4f8d09d30e450497cba20977068b79"
+        },
+        {
+          "memory_id": "4f4f8d09d30e450497cba20977068b79",
+          "revision": 2,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "上海",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣在上海"
+            }
+          ],
+          "proposal_id": "33f8e81c80104ef89042446cca2008e6",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.011833000000002758,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我改变想法现在更希望伴侣在上海"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "location",
+          "value": "上海",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": true
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我改变想法现在更希望伴侣在上海"
+      }
+    ]
+  },
+  {
+    "id": "case-37",
+    "split": "holdout",
+    "text": [
+      "我绝不接受伴侣抽烟"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "boundary",
+        "smoking",
+        "smoker",
+        "general",
+        "no_change"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "boundary",
+        "smoking",
+        "smoker",
+        "general",
+        "no_change"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我绝不接受伴侣抽烟"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "boundary",
+          "attribute_key": "smoking",
+          "value": "smoker",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我绝不接受伴侣抽烟"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "fae64fed1ca64d8eb5914ead87ba38ed",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "no_change",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "fae64fed1ca64d8eb5914ead87ba38ed",
+          "action": "no_change",
+          "reason": "duplicate",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "smoking",
+          "confirmed": true,
+          "direction": "boundary",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": true,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "smoker"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.009167000000004366,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我绝不接受伴侣抽烟"
+            }
+          ],
+          "direction": "boundary",
+          "attribute_key": "smoking",
+          "value": "smoker",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我绝不接受伴侣抽烟"
+      }
+    ]
+  },
+  {
+    "id": "case-38",
+    "split": "holdout",
+    "text": [
+      "推荐理由说我喜欢猫，我没说过"
+    ],
+    "expected_labels": [
+      "presentation_issue"
+    ],
+    "actual_labels": [
+      "presentation_issue"
+    ],
+    "expected_proposals": [],
+    "actual_proposals": [],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "presentation_issue"
+      ],
+      "reason_scope": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "推荐理由说我喜欢猫"
+            }
+          ]
+        },
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我没说过"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.00908400000000642,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "推荐理由说我喜欢猫"
+            }
+          ]
+        },
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我没说过"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "推荐理由说我喜欢猫，我没说过"
+      }
+    ]
+  },
+  {
+    "id": "case-39",
+    "split": "holdout",
+    "text": [
+      "今天太累了，但我一直希望伴侣直接沟通"
+    ],
+    "expected_labels": [
+      "current_state",
+      "general_preference"
+    ],
+    "actual_labels": [
+      "current_state",
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "communication",
+        "direct",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "current_state",
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "current_state",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "今天太累了"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我一直希望伴侣直接沟通"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我一直希望伴侣直接沟通"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "bbad4609e63d404bbb00b9fd810b5685",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "bbad4609e63d404bbb00b9fd810b5685",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "35a7bb15d3eb4328824e6ddd8a2c874e",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我一直希望伴侣直接沟通"
+            }
+          ],
+          "proposal_id": "bbad4609e63d404bbb00b9fd810b5685",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.018457999999998975,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "current_state",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "今天太累了"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我一直希望伴侣直接沟通"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "communication",
+          "value": "direct",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "今天太累了，但我一直希望伴侣直接沟通"
+      }
+    ]
+  },
+  {
+    "id": "case-40",
+    "split": "holdout",
+    "text": [
+      "我总体希望伴侣安静一点，我总体希望伴侣安静一点"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "e79bd0a72b124807932f1d595787c405",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "e79bd0a72b124807932f1d595787c405",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "627ccf270519494ebd88ea78f33a243d",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "proposal_id": "e79bd0a72b124807932f1d595787c405",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.022458000000002976,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我总体希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我总体希望伴侣安静一点，我总体希望伴侣安静一点"
+      }
+    ]
+  },
+  {
+    "id": "case-41",
+    "split": "holdout",
+    "text": [
+      "我希望伴侣安静一点，我希望伴侣喜欢聚会"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "clarify"
+      ],
+      [
+        "demand",
+        "shared_leisure",
+        "social",
+        "general",
+        "clarify"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "general",
+        "clarify"
+      ],
+      [
+        "demand",
+        "shared_leisure",
+        "social",
+        "general",
+        "clarify"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "b420b802848d46a0af615352cf9f6ccb",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "clarify",
+          "status": "pending"
+        },
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "1c2a01f8761d4848a8e8478062937a77",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "clarify",
+          "status": "pending"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "b420b802848d46a0af615352cf9f6ccb",
+          "action": "clarify",
+          "reason": "conflicting_claims_in_feedback",
+          "replaces": null
+        },
+        {
+          "proposal_id": "1c2a01f8761d4848a8e8478062937a77",
+          "action": "clarify",
+          "reason": "conflicting_claims_in_feedback",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.018457999999998975,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣安静一点"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "quiet",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣喜欢聚会"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "shared_leisure",
+          "value": "social",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣安静一点，我希望伴侣喜欢聚会"
+      }
+    ]
+  },
+  {
+    "id": "case-42",
+    "split": "holdout",
+    "text": [
+      "只是她的行程太满，我本人喜欢和朋友聚会"
+    ],
+    "expected_labels": [
+      "candidate_specific",
+      "general_preference"
+    ],
+    "actual_labels": [
+      "candidate_specific",
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "self",
+        "social_activity",
+        "social",
+        "with_friends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "self",
+        "social_activity",
+        "social",
+        "with_friends",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "candidate_specific",
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是她的行程太满"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "c3e707b551d142a3914e0675c4030b1f",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "c3e707b551d142a3914e0675c4030b1f",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "fd6fdab3705647008793f243d988b8b7",
+          "revision": 1,
+          "status": "active",
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ],
+          "proposal_id": "c3e707b551d142a3914e0675c4030b1f",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.01962499999999534,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "candidate_specific",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "只是她的行程太满"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我本人喜欢和朋友聚会"
+            }
+          ],
+          "direction": "self",
+          "attribute_key": "social_activity",
+          "value": "social",
+          "scope": "with_friends",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "只是她的行程太满，我本人喜欢和朋友聚会"
+      }
+    ]
+  },
+  {
+    "id": "case-43",
+    "split": "holdout",
+    "text": [
+      "我希望伴侣不抽烟"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "general_preference"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "smoking",
+        "non_smoker",
+        "general",
+        "no_change"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "smoking",
+        "non_smoker",
+        "general",
+        "no_change"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference"
+      ],
+      "reason_scope": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "a07342b77b63483da663b1ac654d6203",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "no_change",
+          "status": "rejected"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "a07342b77b63483da663b1ac654d6203",
+          "action": "no_change",
+          "reason": "use_prohibited",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "attribute_key": "smoking",
+          "confirmed": true,
+          "direction": "demand",
+          "memory_id": "old-1",
+          "permissions": {
+            "matching": false,
+            "public": false,
+            "self": true
+          },
+          "revision": 1,
+          "scope": "general",
+          "status": "active",
+          "value": "non_smoker"
+        }
+      ],
+      "memory_version": 0,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.009874999999992529,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣不抽烟"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "smoking",
+          "value": "non_smoker",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "我希望伴侣不抽烟"
+      }
+    ]
+  },
+  {
+    "id": "case-44",
+    "split": "holdout",
+    "text": [
+      "资料写错了，但我希望伴侣追求稳定关系"
+    ],
+    "expected_labels": [
+      "general_preference",
+      "presentation_issue"
+    ],
+    "actual_labels": [
+      "general_preference",
+      "presentation_issue"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "relationship_goal",
+        "long_term",
+        "general",
+        "add"
+      ]
+    ],
+    "actual_proposals": [
+      [
+        "demand",
+        "relationship_goal",
+        "long_term",
+        "general",
+        "add"
+      ]
+    ],
+    "exact": true,
+    "result": {
+      "feedback_classification": [
+        "general_preference",
+        "presentation_issue"
+      ],
+      "reason_scope": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "资料写错了"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求稳定关系"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [
+        {
+          "source_message_ids": [
+            "m1"
+          ],
+          "direction": "demand",
+          "attribute_key": "relationship_goal",
+          "value": "long_term",
+          "scope": "general",
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求稳定关系"
+            }
+          ],
+          "certainty": "explicit",
+          "proposal_id": "ffa023f27d14497c82ec609f805c8a3a",
+          "user_id": "fictional-user",
+          "feedback_id": "f1",
+          "batch_id": "b1",
+          "candidate_id": "c1",
+          "feedback_revision": 1,
+          "memory_action": "add",
+          "status": "applied"
+        }
+      ],
+      "arbitration_decisions": [
+        {
+          "proposal_id": "ffa023f27d14497c82ec609f805c8a3a",
+          "action": "add",
+          "reason": "new_explicit_preference",
+          "replaces": null
+        }
+      ],
+      "updated_memories": [
+        {
+          "memory_id": "2240333d8e9d43a5a9fc113932dbee9f",
+          "revision": 1,
+          "status": "active",
+          "direction": "demand",
+          "attribute_key": "relationship_goal",
+          "value": "long_term",
+          "scope": "general",
+          "confirmed": false,
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求稳定关系"
+            }
+          ],
+          "proposal_id": "ffa023f27d14497c82ec609f805c8a3a",
+          "feedback_id": "f1",
+          "state_version": 1,
+          "supersedes": null,
+          "permissions": {
+            "self": true,
+            "matching": true,
+            "public": false
+          }
+        }
+      ],
+      "memory_version": 1,
+      "clarification_needed": false,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.012458999999992448,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "presentation_issue",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "资料写错了"
+            }
+          ]
+        },
+        {
+          "classification": "general_preference",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我希望伴侣追求稳定关系"
+            }
+          ],
+          "direction": "demand",
+          "attribute_key": "relationship_goal",
+          "value": "long_term",
+          "scope": "general",
+          "certainty": "explicit",
+          "correction": false
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "资料写错了，但我希望伴侣追求稳定关系"
+      }
+    ]
+  },
+  {
+    "id": "case-45",
+    "split": "holdout",
+    "text": [
+      "他每个周末都聚会，我受不了",
+      "你只是对他的安排不满意，还是总体希望伴侣周末安静一些？",
+      "后者，这是我一直以来的期待"
+    ],
+    "expected_labels": [
+      "general_preference"
+    ],
+    "actual_labels": [
+      "unclear"
+    ],
+    "expected_proposals": [
+      [
+        "demand",
+        "shared_leisure",
+        "quiet",
+        "weekends",
+        "add"
+      ]
+    ],
+    "actual_proposals": [],
+    "exact": false,
+    "result": {
+      "feedback_classification": [
+        "unclear"
+      ],
+      "reason_scope": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "他每个周末都聚会"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我受不了"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m3"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m3",
+              "text": "后者"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m3"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m3",
+              "text": "这是我一直以来的期待"
+            }
+          ]
+        }
+      ],
+      "memory_proposals": [],
+      "arbitration_decisions": [],
+      "updated_memories": [],
+      "memory_version": 0,
+      "clarification_needed": true,
+      "status": "completed",
+      "metrics": {
+        "provider": "local_rules",
+        "latency_ms": 0.025583999999995166,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost": 0.0,
+        "model_called": false
+      },
+      "validation_errors": []
+    },
+    "error": null,
+    "raw_extraction": {
+      "units": [
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "他每个周末都聚会"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m1"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m1",
+              "text": "我受不了"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m3"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m3",
+              "text": "后者"
+            }
+          ]
+        },
+        {
+          "classification": "unclear",
+          "source_message_ids": [
+            "m3"
+          ],
+          "evidence_span": [
+            {
+              "message_id": "m3",
+              "text": "这是我一直以来的期待"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "message_id": "m1",
+        "role": "user",
+        "text": "他每个周末都聚会，我受不了"
+      },
+      {
+        "message_id": "m2",
+        "role": "assistant",
+        "text": "你只是对他的安排不满意，还是总体希望伴侣周末安静一些？"
+      },
+      {
+        "message_id": "m3",
+        "role": "user",
+        "text": "后者，这是我一直以来的期待"
+      }
+    ]
+  }
+]
