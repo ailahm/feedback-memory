@@ -1,0 +1,25 @@
+{
+  "user_id": "fictional-user",
+  "feedback_id": "f1",
+  "request_id": "r1",
+  "batch_id": "b1",
+  "candidate_id": "c1",
+  "memory_version": 0,
+  "feedback_revision": 1,
+  "stance": "reject",
+  "candidate": {
+    "city": "杭州",
+    "interests": [
+      "徒步",
+      "聚会"
+    ],
+    "smoking": false
+  },
+  "messages": [
+    {
+      "message_id": "m1",
+      "role": "user",
+      "text": "我总体希望伴侣安静一点"
+    }
+  ]
+}

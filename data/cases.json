@@ -1,0 +1,2086 @@
+[
+  {
+    "id": "case-01",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我总体希望伴侣安静一点"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-02",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣喜欢聚会"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "social",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-03",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "只是他每次都迟到"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "candidate_specific"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-04",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "今天太累了不想看"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "current_state"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-05",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "推荐理由写错了"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "presentation_issue"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-06",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "他太爱聚会了"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "unclear"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-07",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣不抽烟"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "smoking",
+          "non_smoker",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-08",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣喜欢宠物"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "pets",
+          "likes_pets",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-09",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣直接沟通"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "communication",
+          "direct",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-10",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我能提供耐心的倾听"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "supply",
+          "communication",
+          "patient",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-11",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我本人喜欢和朋友聚会"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "self",
+          "social_activity",
+          "social",
+          "with_friends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-12",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我总体希望伴侣安静一点"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "quiet",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "no_change"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-13",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我改变想法现在更希望伴侣安静一点"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "update"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-14",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣安静一点"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "clarify"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-15",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣周末安静一点"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "workdays"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "weekends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-16",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我不能接受伴侣抽烟"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "boundary",
+          "smoking",
+          "smoker",
+          "general",
+          "clarify"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-17",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣安静一点"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "quiet",
+        "scope": "general",
+        "status": "forgotten",
+        "use_prohibited": true
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "no_change"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-18",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "只是他太忙了，但我希望伴侣直接沟通"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "candidate_specific",
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "communication",
+          "direct",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-19",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "今天不想看，但我希望伴侣不抽烟"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "current_state",
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "smoking",
+          "non_smoker",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-20",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "推荐理由不对，但我希望伴侣喜欢宠物"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference",
+        "presentation_issue"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "pets",
+          "likes_pets",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-21",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我本人喜欢朋友聚会，但我希望伴侣周末安静一点"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "self",
+          "social_activity",
+          "social",
+          "with_friends",
+          "add"
+        ],
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "weekends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-22",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "可能喜欢安静的人吧"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "unclear"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-23",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "朋友说他希望找安静的伴侣"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "unclear"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-24",
+    "split": "dev",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣在杭州"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "location",
+          "杭州",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-25",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣追求长期关系"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "relationship_goal",
+          "long_term",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-26",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣不养宠物"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "pets",
+          "no_pets",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-27",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "只针对这个人，不代表我排斥所有爱聚会的人"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "candidate_specific",
+        "unclear"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-28",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我不是不喜欢聚会，只是这周太累"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "current_state"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-29",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "他喜欢猫这件事不影响我的选择"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "candidate_specific"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-30",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "无论推荐谁，我都想两个人周末安静待着"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "weekends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-31",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "爱不爱聚会无所谓，有话直说对我才重要"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "communication",
+          "direct",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-32",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "先别根据这次拒绝修改我的偏好"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "unclear"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-33",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "以前说喜欢热闹作废，以后想找安静的伴侣"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "shared_leisure",
+        "value": "social",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "update"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-34",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣工作日安静一点，我希望伴侣周末喜欢聚会"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "workdays",
+          "add"
+        ],
+        [
+          "demand",
+          "shared_leisure",
+          "social",
+          "weekends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-35",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣在上海"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "location",
+        "value": "杭州",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "location",
+          "上海",
+          "general",
+          "clarify"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-36",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我改变想法现在更希望伴侣在上海"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "location",
+        "value": "杭州",
+        "scope": "general"
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "location",
+          "上海",
+          "general",
+          "update"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-37",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我绝不接受伴侣抽烟"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "boundary",
+        "attribute_key": "smoking",
+        "value": "smoker",
+        "scope": "general",
+        "confirmed": true
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "boundary",
+          "smoking",
+          "smoker",
+          "general",
+          "no_change"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-38",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "推荐理由说我喜欢猫，我没说过"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "presentation_issue"
+      ],
+      "proposals": []
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-39",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "今天太累了，但我一直希望伴侣直接沟通"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "current_state",
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "communication",
+          "direct",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-40",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我总体希望伴侣安静一点，我总体希望伴侣安静一点"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-41",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣安静一点，我希望伴侣喜欢聚会"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "general",
+          "clarify"
+        ],
+        [
+          "demand",
+          "shared_leisure",
+          "social",
+          "general",
+          "clarify"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-42",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "只是她的行程太满，我本人喜欢和朋友聚会"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "candidate_specific",
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "self",
+          "social_activity",
+          "social",
+          "with_friends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-43",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "我希望伴侣不抽烟"
+        }
+      ]
+    },
+    "initial_memories": [
+      {
+        "memory_id": "old-1",
+        "direction": "demand",
+        "attribute_key": "smoking",
+        "value": "non_smoker",
+        "scope": "general",
+        "permissions": {
+          "self": true,
+          "matching": false,
+          "public": false
+        }
+      }
+    ],
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "smoking",
+          "non_smoker",
+          "general",
+          "no_change"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-44",
+    "split": "holdout",
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "city": "杭州",
+        "interests": [
+          "徒步",
+          "聚会"
+        ],
+        "smoking": false
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "资料写错了，但我希望伴侣追求稳定关系"
+        }
+      ]
+    },
+    "initial_memories": [],
+    "expected": {
+      "labels": [
+        "general_preference",
+        "presentation_issue"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "relationship_goal",
+          "long_term",
+          "general",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "人工编写的虚构验收期望；单人标注，尚未经业务方复核"
+  },
+  {
+    "id": "case-45",
+    "split": "holdout",
+    "initial_memories": [],
+    "request": {
+      "user_id": "fictional-user",
+      "feedback_id": "f1",
+      "request_id": "r1",
+      "batch_id": "b1",
+      "candidate_id": "c1",
+      "memory_version": 0,
+      "feedback_revision": 1,
+      "stance": "reject",
+      "candidate": {
+        "interests": [
+          "聚会"
+        ]
+      },
+      "messages": [
+        {
+          "message_id": "m1",
+          "role": "user",
+          "text": "他每个周末都聚会，我受不了"
+        },
+        {
+          "message_id": "m2",
+          "role": "assistant",
+          "text": "你只是对他的安排不满意，还是总体希望伴侣周末安静一些？"
+        },
+        {
+          "message_id": "m3",
+          "role": "user",
+          "text": "后者，这是我一直以来的期待"
+        }
+      ]
+    },
+    "expected": {
+      "labels": [
+        "general_preference"
+      ],
+      "proposals": [
+        [
+          "demand",
+          "shared_leisure",
+          "quiet",
+          "weekends",
+          "add"
+        ]
+      ]
+    },
+    "annotation_note": "跨轮指代：原话证据应联合m1与m3；assistant只作消歧，不作为用户事实"
+  }
+]
