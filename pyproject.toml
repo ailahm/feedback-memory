@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedback-memory"
+version = "0.1.0"
+description = "Evidence-grounded recommendation feedback memory arbitration"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+feedback-memory = "feedback_memory.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["feedback_memory*"]
